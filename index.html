@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,700&display=swap" rel="stylesheet">
+          <!-- Feather Icon -->
+<script src="https://unpkg.com/feather-icons"></script>
+          <!-- Feather Icon -->
+
+          <!-- Library Sweet Alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Warkop Berkah Karim</title>
+          <!-- Style Css -->
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nomer">
+      <p>Hotline - <a href="https://wa.me/6282139503931">WhatsApp</a></p>
+    </div>
+    <div class="sosmed">
+      <a href="https://www.instagram.com/mchael.86?igsh=ODA1NTc5OTg5Nw==" id="ig"><i data-feather="instagram"></i></a>
+      <a href="https://www.instagram.com/mchael.86?igsh=ODA1NTc5OTg5Nw==" id="fb"><i data-feather="facebook"></i></a>
+      <a href="https://www.instagram.com/mchael.86?igsh=ODA1NTc5OTg5Nw==" id="twit"><i data-feather="twitter"></i></a>
+    </div>
+  </nav>
+  <hr>
+  <nav class="navbar2">
+      <a href="#" class="navbar-logo">
+        <img src="img/logo.png" alt="logo" width="100" height="100"> <p>Warkop Berkah <span> &nbsp;Karim</span>.</p>
+    </a>
+    <div class="utama">
+      <a href="#home">Beranda</a>
+      <a href="#about" >Tentang Kami</a>
+      <a href="#menu">Menu</a>
+      <a href="#info">Informasi Kami</a>
+    </div>
+    <div class="samping">
+      <a href="#" id="pilihan"><i data-feather="menu"></i></a>    
+    </div>
+  </nav>
+
+  <!-- Hero Section Start-->
+<section class="hero" id="home">
+  <main class="content">
+      <h2>Cari Inovasi Dengan <span>Kopi</span></h2>
+      <p>Apakah Kamu Frustasi? Sepertinya Kamu Membutuhkan Kopi Sebagai Inspirasi dan Inovasi</p>
+      <a href="#menu" class="cta">Pesan Sekarang</a>
+  </main>
+ </section>
+ <!-- Hero Section End-->
+ <!--About Section Start -->
+ <section id="about" class="about">
+  <h2><span>Tentang</span> Kami</h2>
+  <div class="column">
+    <div class="about-img">
+      <img src="img/tentang-kami.jpg" alt="TentangKami">
+    </div>
+    <div class="content">
+      <p>Selamat datang di Warung Kopi Berkah <span>Karim</span>. Kami adalah tempat yang berkomitmen untuk memberikan pengalaman kopi yang tak terlupakan. Di sini, kami menggabungkan seni kopi yang berkualitas tinggi dengan suasana yang hangat dan ramah. Mulai dari biji kopi pilihan hingga teknik pembuatan yang teliti, setiap cangkir di Warung Kopi Berkah <span>Karim</span> menciptakan sebuah cerita rasa yang unik. Kami bangga menjadi bagian dari komunitas pecinta kopi dan berusaha untuk menjadi destinasi favorit Anda dalam menikmati kelezatan kopi terbaik. Terima kasih telah memilih Warung Kopi Berkah <span>Karim</span> sebagai tempat Anda untuk menikmati kopi yang istimewa bersama Kerabat Ataupun Sahabat.</p>
+    </div>
+  </div>
+ </section> 
+ <!--About Section End -->
+  <!--Menu Section Start  -->
+  <form method="post" action="php/pesan.php">
+    <section class="menu" id="menu">
+    <h2> <span>Menu</span> Kami</h2>.
+    <p>Jelajahi kelezatan di setiap hidangan dan teguk kopi dari menu kami yang beragam di Warung Kopi Berkah <span>Karim</span>. Dari aroma kopi yang memikat hingga masakan yang memanjakan lidah, kami menyajikan pengalaman kuliner yang tak terlupakan. Nikmati ragam minuman istimewa mulai dari kopi klasik hingga kreasi spesial, serta temukan kelezatan dalam setiap hidangan masakan kami yang diracik dengan teliti. Dengan menu yang penuh variasi, Warkop Berkah <span>Karim</span> siap memanjakan selera Anda dan menyuguhkan pengalaman kuliner yang tak tertandingi di setiap kunjungan Anda</p>
+    <div class="row">
+    <div class="menuMakanan">
+      <img src="img/menumakanan/kopihitam1.jpg" alt="kopihitam">
+      <h3>-Kopi Hitam-</h3>
+      <p>IDR 5K</p>
+      <input name="order" type="text" id="kopi-hitam" placeholder="Pesan Berapa">
+     </div>
+    <div class="menuMakanan">
+      <img src="img/menumakanan/Kopi Susu.jpg" alt="kopihitam">
+      <h3>-Kopi Susu-</h3>
+      <p>IDR 5K</p>
+      <input type="text" name="order" id="kopi-susu" placeholder="Pesan Berapa">
+     </div>
+    <div class="menuMakanan">
+      <img src="img/menumakanan/teh hangat.jpg" alt="kopihitam">
+      <h3>-Teh Hangat-</h3>
+      <p>IDR 3K</p>
+      <input type="text" name="order" id="teh-hangat" placeholder="Pesan Berapa">
+     </div>
+    <div class="menuMakanan">
+      <img src="img/menumakanan/Es Teh.jpg" alt="kopihitam">
+      <h3>-Es Teh-</h3>
+      <p>IDR 3K</p>
+      <input type="text" name="order" id="es-teh" placeholder="Pesan Berapa">
+     </div>
+    <div class="menuMakanan">
+      <img src="img/menumakanan/Jeruk Hangat.jpg" alt="kopihitam">
+      <h3>-Jeruk Hangat-</h3>
+      <p>IDR 5K</p>
+      <input type="text" name="order" id="jeruk-hangat" placeholder="Pesan Berapa">
+     </div>
+    <div class="menuMakanan">
+      <img src="img/menumakanan/Es Jeruk.jpg" alt="kopihitam">
+      <h3>-Es Jeruk-</h3>
+      <p>IDR 5K</p>
+      <input type="text" name="order" id="es-jeruk" placeholder="Pesan Berapa">
+     </div>
+  </div>
+  <div class="tampilan">
+    <h3>Anda lapar? Kami Juga Menyediakan Berbagai Menu <span>Masakan</span></h3>
+  </div>
+  <div class="kolom">
+    <div class="menuMakanan2">
+      <img src="img/menumakanan/mie1.jpg" alt="Mie">
+      <h3>-Mie Instan-</h3>
+      <p>IDR 5K</p>
+      <input type="text" name="order" id="mie-instan" placeholder="Pesan Berapa">
+    </div>
+    <div class="menuMakanan2">
+      <img src="img/menumakanan/mietelur1.jpg" alt="Mie">
+      <h3>-Mie Instan Telur-</h3>
+      <p>IDR 8K</p>
+      <input type="text" name="order" id="mie-telur" placeholder="Pesan Berapa">
+    </div>
+    <div class="menuMakanan2">
+      <img src="img/menumakanan/NasiGoreng.jpg" alt="Mie">
+      <h3>-Nasi Goreng-</h3>
+      <p>IDR 10K</p>
+      <input type="text" name="order" id="nasi-goreng" placeholder="Pesan Berapa">
+    </div>
+    <div class="menuMakanan2">
+      <img src="img/menumakanan/NasiAyam.jpg" alt="Mie">
+      <h3>-Nasi Ayam-</h3>
+      <p>IDR 12K</p>
+      <input type="text" name="order" id="nasi-ayam" placeholder=" Pesan Berapa">
+    </div>
+    <div class="menuMakanan2">
+      <img src="img/menumakanan/NasiKuning.jpg" alt="Mie">
+      <h3>-Nasi Kuning-</h3>
+      <p>IDR 10K</p>
+      <input type="text" name="order" id="nasi-kuning" placeholder="Pesan Berapa">
+    </div>
+    <div class="menuMakanan2">
+      <img src="img/menumakanan/IndomieKuah.jpg" alt="Mie">
+      <h3>-Indomie Kuah-</h3>
+      <p>IDR 5K</p>
+      <input type="text" name="order" id="mie-kuah" placeholder="Pesan Berapa">
+    </div>
+   </div>
+  </div>
+  <div class="tombol-pesan">
+      <button name="pesan" type="submit" class="tombol">Pesan</button>
+    <p id="result"></p>
+    <div class="kotak">
+      <div class="title">
+          <a href="index.html"><i data-feather="arrow-left-circle"></i></a>
+          <h3>Lanjutkan Pemesanan</h3>
+          <a href="index.html"><i data-feather="x"></i></a>
+      </div>
+      <div class="komponen">
+        <h5>Apakah Anda Ingin Melanjutkan Pembelian?</h5>
+        <button class="option-button" onclick="selectedOption('lanjut')">Lanjutkan</button>
+        <button class="option-button" onclick="selectedOption('batal')">Batalkan</button>
+      </div>
+      </div>
+    </div>
+  </section>
+</form>
+  <!--Menu Section End  -->
+  <!-- Info Section Start -->
+  <section class="info" id="info">
+    <h2>Informasi <span>Kami</span></h2>
+    <p>Website resmi kami menyediakan layanan lokasi yang akurat, agar pengunjung tidak kesusahan untuk menemukan lokasi warung kopi kami. Kami juga menyediakan layanan untuk pemesanan secara online, apabila customer malas keluar atau sedang sibuk dan lain-lain, kami siap menghantarkan pesanan anda.</p>
+    <div class="row">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31660.510905874373!2d112.79346379094959!3d-7.2903595838817745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f09c510751b5%3A0xb04b9f70e748e85!2sKeputih%2C%20Kec.%20Sukolilo%2C%20Surabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1704123444800!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <form action="php/footer.php" method="post">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" name="nama" placeholder="Nama">
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" name="phone" placeholder="Nomor Telepon">
+        </div>
+        <button type="submit" name="send" class="btn">Kirim</button>
+      </form>
+    </div>
+  </section>
+  <!-- Info Section End -->
+
+  <footer>
+    <div class="socials">
+     <a href="https://www.instagram.com/mchael.86?igsh=ODA1NTc5OTg5Nw=="><i data-feather="instagram"></i></a>
+     <a href="https://www.instagram.com/mchael.86?igsh=ODA1NTc5OTg5Nw=="><i data-feather="facebook"></i></a>
+     <a href="https://www.instagram.com/mchael.86?igsh=ODA1NTc5OTg5Nw=="><i data-feather="twitter"></i></a>
+    </div>
+ 
+    <div class="links">
+     <a href="#home">Beranda</a>
+     <a href="#about">Tentang Kami</a>
+     <a href="#menu">Menu</a>
+     <a href="#info">Informasi Kami</a>
+    </div>
+ 
+    <div class="credit">
+     <p>Credit by <a href="">Achmad Michael Mushoharoin</a> | &copy; 2024</p>
+    </div>
+   </footer>
+   
+  <!-- Feather Icon -->
+  <script>
+    feather.replace();
+  </script>  
+  <!-- Feather Icon -->
+  <!-- My javaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

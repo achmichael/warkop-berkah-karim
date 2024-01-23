@@ -1,0 +1,478 @@
+:root {
+    --primary: #682607;
+    --bg: #010101;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 4%;
+    color: white;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-bottom: 10%;
+}
+.nomer a{
+    color: white;
+    text-decoration: none;
+}
+.navbar .nomer a:hover {
+    color: black;
+    cursor: pointer;
+}
+.utama a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.utama a:hover{
+    color: var(--primary);
+}
+.navbar .sosmed a {
+    color: white;
+    margin-right: 10px;
+}
+
+.navbar .sosmed a:hover {
+    color: black;
+}
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar2 {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 3%;
+    color: black;
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1000;/* Agar tidak tertimbun oleh navbar diatasnya
+    */
+}
+.navbar-logo{
+    display: flex;
+    text-decoration: none;
+    align-items: center;/* agar logo dan tulisan sejajar*/
+}
+.navbar2 img {
+    display: block;
+    height: auto;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+.navbar2 p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+.utama a:hover{
+    color: red;
+}
+.navbar2 .navbar-logo p span {
+    font-style: italic;
+    color: var(--primary);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.tampilan h3{
+    color: black;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+.row, .kolom{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.row .menuMakanan, .menuMakanan2{
+    text-align: center;
+}
+.menuMakanan img, 
+.menuMakanan2 img{
+    border-radius: 50%;
+    width: 40%;
+}
+.menuMakanan3 img{
+    border-radius: 50%;
+    width: 30%;
+}
+.tombol-pesan .tombol{
+    background-color: #fff;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tombol:hover{
+    background-color: rgb(120, 32, 32);
+    color: white;
+    border: none;
+    transition: 0.2s linear;
+}
+.row .menuMakanan input,
+.kolom .menuMakanan2 input
+{
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    padding: 0.5rem 0.1rem;
+    border-radius: 15px;
+}
+#result{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.navbar2 a{
+    color: #010101;
+}
+.utama a {
+    padding: 0 40px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+#pilihan{
+    display: none;
+}
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero::after{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 30%;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(0deg,rgba(1,1,3,1) 8%, rgba(225,225,225,0)50%);
+}
+.hero .content{
+    padding: 0.3rem 3%;
+    max-width: 60rem;
+}
+.content h2{
+    font-size: 3em;
+    color: #fff;
+    line-height: 1.3;
+    text-shadow: 1px 1px 3px rgba(1,1,3,0,5);
+}
+.content h2 span{
+    color: #010101;
+}
+.content p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    line-height: 1.4;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(1,1,3,0,5);
+}
+.hero .content .cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: black;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1,1,3,0,5);
+    text-decoration: none;
+}
+.hero .content .cta:hover{
+    background-color: transparent;
+    color: white;
+    transition: 0.2s linear;
+}
+.kotak{
+    background-color: var(--primary);
+    border-radius: 10px;
+    display: none;
+}
+.kotak.aktiv{
+    display: block;
+}
+.kotak .title{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+.kotak .title h3{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.kotak .title a{
+    margin: 0.3rem 1rem;
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;
+}
+.kotak .title a:hover{
+    color: grey;
+    transition: 0.2s linear;
+}
+.kotak .title i{
+    margin-right: 5px;
+}
+.komponen{
+    display: inline-block;
+    justify-content: center;
+    color: black;
+    background-color: rgb(229, 226, 226);
+    padding: 8rem 2rem;
+}
+.komponen h5{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.komponen .option-button{
+    background-color: rgb(193, 190, 190);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    margin: 1rem 20rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+}
+.option-button:hover{
+    background-color: transparent;
+    transition: 0.2s linear;
+}
+/* About Section */
+.about,
+.menu{
+    padding: 6rem 7% 2rem;
+}
+.about h2,
+.menu h2,
+.info h2{
+    color:black;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.about h2 span,
+.info h2 span,
+.menu h2 span,
+.about p span,
+.menu p span{
+    color: #682607;
+    font-weight: 700;
+}
+.about .column{
+    display: flex;
+    text-align: center;
+}
+.about .column .about-img{
+    flex: 1 1 45rem;
+}
+.about .column .about-img img{
+    padding-top: 1rem;
+    width: 100%;
+}
+.about .column .content{
+    flex: 1 1 35rem;
+}
+.about .column .content p,
+.menu p,
+.info p{
+    margin-bottom: 0.8rem;
+    color: black;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+.menu,.info{
+    text-align: center;
+}
+.menu h2,
+.info h2{
+    margin-bottom: 0.5rem;
+}
+/* Info Section */
+.info .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: rgb(254, 248, 248);
+}
+.info .row .map{
+    width: 100%;
+    flex: 1 1 45rem;
+    object-fit: cover;
+}
+.info .row form{
+    flex: 1 1 45rem;
+    padding: 7rem 2rem;
+    text-align: center;
+}
+.info .row form .input-group{
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    color: black;
+    padding-left: 2rem;
+    border: 1px solid black;
+}
+.info .row form .input-group input{
+    border: none;
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem 2rem;
+    font-size: 1.7rem;
+    background: none;
+}
+.info .row .btn{
+    margin-top: 3rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(138, 137, 137);
+}
+.info .row .btn:hover{
+    background-color: transparent;
+    color: black;
+}
+footer {
+    margin-top: 2rem;
+    padding: 1rem 2rem 3rem ;
+    background-color: white;
+    color: #010101;
+    text-align: center;
+}
+.socials a{
+    align-items: center;
+    padding: 1rem;
+    color: black;
+}
+.socials , .links{
+    margin-bottom: 1.4rem;
+}
+.socials a:hover,
+.links a:hover{
+    color: red ;
+}
+.links a{
+    font-size: 1rem;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+}
+.credit a{
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: red;
+}
+/* Media Queries */
+/* laptop */
+@media (max-width: 1366px){
+    html{
+        font-size: 75%;
+    }
+}
+/* Tablet */
+@media (max-width: 768px){
+    html{
+        font-size: 62.5%;
+    }
+#pilihan{
+    display: inline-block;
+    cursor: pointer;
+}
+.utama{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    color: black;
+    background-color: #fff;
+    height: 80vh;
+    width: 25rem;
+    transition: 0.3s linear;
+}
+.utama.active{
+    right: 0;
+}
+.utama a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    color: #010101;
+    font-size: 1.5rem;
+}    
+.utama a:hover::after{
+    transform: scaleX(0.2);
+}
+.about .column {
+    flex-wrap: wrap;
+}
+.about .column .about-img img{
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+}
+.about .column .content{
+    padding: 0;
+}
+.about h2{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.about .column .content p{
+    font-size: 1.6rem;
+}
+.info .row{
+    flex-wrap: wrap;
+}
+.info .row .map{
+    height: 30rem;
+}
+.info .row form{
+    padding-top: 0;
+}
+}
+/* HandPhone */
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+}

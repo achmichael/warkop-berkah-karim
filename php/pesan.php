@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 function done(){
     echo "<script>
     Swal.fire({
@@ -30,4 +30,4 @@ if(isset($_POST['pesan'])){
         echo "Tolong inputkan pesanan berupa angka";
     }
 }
-?>
+?> -->

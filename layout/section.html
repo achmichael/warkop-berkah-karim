@@ -21,7 +21,7 @@
    </section> 
    <!--About Section End -->
     <!--Menu Section Start  -->
-    <form method="post" action="php/pesan.php">
+    <!-- <form method="post" action="php/pesan.php"> -->
       <section class="menu" id="menu">
       <h2> <span>Menu</span> Kami</h2>.
       <p>Jelajahi kelezatan di setiap hidangan dan teguk kopi dari menu kami yang beragam di Warung Kopi Berkah <span>Karim</span>. Dari aroma kopi yang memikat hingga masakan yang memanjakan lidah, kami menyajikan pengalaman kuliner yang tak terlupakan. Nikmati ragam minuman istimewa mulai dari kopi klasik hingga kreasi spesial, serta temukan kelezatan dalam setiap hidangan masakan kami yang diracik dengan teliti. Dengan menu yang penuh variasi, Warkop Berkah <span>Karim</span> siap memanjakan selera Anda dan menyuguhkan pengalaman kuliner yang tak tertandingi di setiap kunjungan Anda</p>
@@ -106,13 +106,14 @@
      </div>
     </div>
     <div class="tombol-pesan">
-        <button name="pesan" type="submit" class="tombol">Pesan</button>
+      <!-- Button di dalam elemen form akan maka akan merefresh halaman web secara otomatis -->
+        <button name="pesan" onclick="hasil();" type="submit" class="tombol">Pesan</button>
       <p id="result"></p>
       <div class="kotak">
         <div class="title">
-            <a href="index.html"><i data-feather="arrow-left-circle"></i></a>
+            <a id="back" href="#"><i data-feather="arrow-left-circle"></i></a>
             <h3>Lanjutkan Pemesanan</h3>
-            <a href="index.html"><i data-feather="x"></i></a>
+            <a id="close" href="#"><i data-feather="x"></i></a>
         </div>
         <div class="komponen">
           <h5>Apakah Anda Ingin Melanjutkan Pembelian?</h5>
@@ -122,7 +123,7 @@
         </div>
       </div>
     </section>
-  </form>
+  <!-- </form> -->
     <!--Menu Section End  -->
     <!-- Info Section Start -->
     <section class="info" id="info">
@@ -130,7 +131,7 @@
       <p>Website resmi kami menyediakan layanan lokasi yang akurat, agar pengunjung tidak kesusahan untuk menemukan lokasi warung kopi kami. Kami juga menyediakan layanan untuk pemesanan secara online, apabila customer malas keluar atau sedang sibuk dan lain-lain, kami siap menghantarkan pesanan anda.</p>
       <div class="row">
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31660.510905874373!2d112.79346379094959!3d-7.2903595838817745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f09c510751b5%3A0xb04b9f70e748e85!2sKeputih%2C%20Kec.%20Sukolilo%2C%20Surabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1704123444800!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form action="php/footer.php" method="post">
+        <form action="" method="post">
           <div class="input-group">
             <i data-feather="user"></i>
             <input type="text" name="nama" placeholder="Nama">

@@ -7,17 +7,30 @@ document.querySelector('#pilihan').onclick = () => {
 //Untuk menghilangkan sidebar pada saat mengeklik diluar icon menu
 const menu = document.querySelector('#pilihan');
 document.addEventListener('click', function(e){
-    if(!menu.contains(e.target) && !navbarNav.contains(e.target)){
+    if(!menu.contains(e.target) && !navbarNav.contains(e.target)){//mengeklik diluarr icon menu dan navbar
      navbarNav.classList.remove('active');   
+    } 
+}
+);
+const kotak = document.querySelector('.kotak');
+const menuKotak = document.getElementById('back');
+const closeButton = document.getElementById('close');
+function lanjutkan() {//method untuk toogle
+    document.querySelector('.tombol').onclick = () => {
+    kotak.classList.toggle('aktiv');
+}
+document.addEventListener('click', function(e){//agar ketika icon di click toggle kelas aktiv bisa hilang
+    if(menuKotak.contains(e.target)){//berfungsi ketika user mengeklik tepat di bagian icon
+        window.location.href = 'menu.php';
+    }
+    if(closeButton.contains(e.target)){
+        kotak.classList.remove('aktiv');
+        e.preventDefault();//untuk menghapus perilaku default event click yang biasanya berefek akan otomatis scroll ke bagian atas halaman website
     }
 }
 );
-function lanjutkan() {
-    const kotak = document.querySelector('.kotak');
-    document.querySelector('.tombol'). onclick = () => {
-    kotak.classList.toggle('aktiv');
 }
-}
+
 function hasil(){
 const kopiHitam = document.getElementById('kopi-hitam');
 // Harus dilakukan parse agar ketika nanti terjadi penambahan akan menampilkan hasil dari penambahan angka bukan hasil dari penggabungan string
@@ -65,7 +78,13 @@ function selectedOption(option){
             text: 'Ok Pesanan Anda Dilanjutkan',
             icon:  'success',
             confirmButtonText: 'Ok',
-        });
+            showCancelButton : true,
+        })
+        .then((result)=> {
+            if(result.isConfirmed){//agar ketika user klik tombol oke, otomatis langsung beralih ke telegram untuk komunikasi dengan admin
+                window.location.href = 'http://t.me/warkopBerkahBot';
+            }
+        })
     }else if (option === 'batal'){
         Swal.fire({
             title: 'Apakah anda yakin?',
@@ -87,5 +106,13 @@ function selectedOption(option){
               });
             } 
         })
-    }
+    }   
+}
+function tutupHalaman(){//function ini masih belum bisa berjalan
+    if(window.close){
+        window.close();
+    }else{
+    window.open('', '_self', '');
+        window.close();        
+}
 }

@@ -1,0 +1,171 @@
+:root{
+    --primary : #542914;
+    --bg : #010101;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: brown;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.message{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: red;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    mix-blend-mode: hard-light;
+}
+.kolom{
+    padding: 1.5rem 3%;
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    right: 0;
+    margin-bottom: 10%;
+}
+.kolom .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.kolom .navbar a{
+    color: white;
+    font-size: 1.5rem;
+}
+.kolom .navbar a:hover{
+    color: black;
+}
+.kolom .navbar h3{
+    font-size: 2rem;
+}
+.kolom .navbar h3 span{
+    color: rgb(179, 178, 178);
+}
+.data .main{
+    z-index: 9999;
+    margin-top: 2.5rem;
+    background-color: transparent;
+}
+.data .main .content{
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.data .main .content h3{
+    text-align: center;
+    font-size: 2rem;
+}
+.data .main .content h3 span
+{
+    color: rgb(179, 178, 178);
+    font-style: italic;
+}
+.data .main .text p{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.data{
+    margin-top: 4rem;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg);
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    background-size: cover;
+}
+.data .user{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.data .user .username{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data .user .phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data .user .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data .user .btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.data .user .btn button{
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.7rem 1.5rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.data .user .btn button:hover{
+    background-color: transparent;
+    color: black;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+.data .user .username,
+.data .user .email,
+.data .user .phone
+{
+    margin-bottom: 1.5rem;
+}
+.data .user .username input{
+    padding: 0.3rem 1rem;
+    margin-left: 4.5rem;
+    border: none;
+}
+.data .user .email input{
+    padding: 0.3rem 1rem;
+    border: none;
+    margin-left: 4.7rem;
+}
+.data .user .username label,
+.data .user .phone label,
+.data .user .email label{
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    /* Mix Blend Mode digunakan agar tulisan bisa menyesuaikan dengan warna background agar terlihat lebih jelas */
+    mix-blend-mode: hard-light;
+    color: white;
+    font-size: 1.6rem;
+    font-style: italic;
+}
